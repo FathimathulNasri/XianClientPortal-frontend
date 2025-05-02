@@ -42,8 +42,8 @@ const FeedbackList = () => {
             <p><strong>Rating:</strong> {f.rating || 'N/A'}</p>
             {f.image && (
               <img
-                src={`http://localhost:5000/uploads/${f.image}`}
-                alt="feedback"
+                src={f.image}
+                alt={f.image}
                 className="feedback-image"
               />
             )}
