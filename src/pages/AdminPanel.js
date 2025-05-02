@@ -10,7 +10,7 @@ const AdminPanel = () => {
   useEffect(() => {
     const fetchFeedback = async () => {
       const token = localStorage.getItem('token');
-      const res = await axios.get('/feedback/all', {
+      const res = await axios.get('api/feedback/all', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -23,7 +23,7 @@ const AdminPanel = () => {
   const handleComment = async (id, comment) => {
     const token = localStorage.getItem('token');
     await axios.put(
-      `/feedback/comment/${id}`,
+      `api/feedback/comment/${id}`,
       { comment },
       {
         headers: {
@@ -39,7 +39,7 @@ const AdminPanel = () => {
   const handleDelete = async (id) => {
     const token = localStorage.getItem('token');
     try {
-      await axios.delete(`/feedback/${id}`, {
+      await axios.delete(`api/feedback/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -11,7 +11,7 @@ const Register = () => {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    await axios.post('/auth/register', { name,email, password });
+    await axios.post('api/auth/register', { name,email, password });
     navigate('/login');
   };
 

@@ -23,7 +23,7 @@ const FeedbackForm = () => {
     if (image) formData.append('image', image);
 
     try {
-      await axios.post('/feedback/submit', formData, {
+      await axios.post('api/feedback/submit', formData, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'multipart/form-data'

@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('/auth/login', { email, password });
+      const res = await axios.post('api/auth/login', { email, password });
 
       // Save the token to localStorage
       localStorage.setItem('token', res.data.token);

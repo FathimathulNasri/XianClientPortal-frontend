@@ -14,7 +14,7 @@ const FeedbackList = () => {
       }
 
       try {
-        const res = await axios.get('/feedback/all', {
+        const res = await axios.get('api/feedback/all', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
