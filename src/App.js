@@ -5,11 +5,14 @@ import Register from './components/Register';
 import Dashboard from './pages/Dashboard';
 import AdminPanel from './pages/AdminPanel';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
+
 
 function App() {
   return (
     <div>
       <Navbar />
+      <Home />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
