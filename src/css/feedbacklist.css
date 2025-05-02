@@ -1,0 +1,22 @@
+.feedback-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .feedback-card {
+    background: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-image {
+    max-width: 70%;
+    width:70%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
